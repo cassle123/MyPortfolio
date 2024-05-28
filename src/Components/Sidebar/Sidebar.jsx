@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Sidebar.css";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 
 function Sidebar({ routes }) {
   return (
     <aside className="aside">
       <Link to="/" className="nav-logo">
-        <img src={Logo} alt="Logo" />
+        <img src={Logo} alt="Logo" width={40} height={40} />
       </Link>
 
       <nav className="nav">

@@ -1,0 +1,38 @@
+.services-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875rem;
+}
+
+.services-card {
+    text-align: center;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    transition: all 0.5s ease-in-out;
+    box-shadow: var(--box-shadow-card);
+}
+
+.services-card:hover {
+    transform: translateY(-10px);
+}
+
+.cardFE:hover {
+    box-shadow: 0px 5px 20px 0px rgb(255 209 92 /80%);
+}
+
+.cardBE:hover {
+    box-shadow: 0px 5px 20px 0px rgb(255 76 96 /80%);
+}
+
+.cardDB:hover {
+    box-shadow: 0px 5px 20px 0px rgb(108 108 255 /80%);
+}
+
+.services-img {
+    margin-bottom: 1.25rem;
+}
+
+.services-title {
+    font-size: var(--h3-fs);
+    margin-bottom: 1rem;
+}

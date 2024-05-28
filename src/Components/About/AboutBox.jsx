@@ -1,14 +1,18 @@
 const aboutbox = [
   {
     number: 6,
-    subtile: "Participated in 4 projects while working.",
-    icon: "about-icon icon-fire",
+    subtile: "6 Projects working.",
+    icon: "about-icon icon-briefcase",
   },
-  {},
   {
-    number: 12,
-    subtile: "Self-study projects or school projects.",
-    icon: "about-icon icon-cup",
+    number: 7,
+    subtile: "7 Self-study projects.",
+    icon: "about-icon icon-puzzle",
+  },
+  {
+    number: 5,
+    subtile: "5 School projects.",
+    icon: "about-icon icon-graduation",
   },
 ];
 
