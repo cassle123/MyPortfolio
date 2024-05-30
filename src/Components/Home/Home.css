@@ -1,6 +1,7 @@
 .home {
     position: relative;
-    min-height: 100vh;
+    /* min-height: calc(100vh - 100px); */
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,11 +112,11 @@
 
 .s1 {
     left: 2%;
-    top: 2%;
+    top: 0%;
 }
 
 .s2 {
-    left: 18%;
+    left: 78%;
     top: 30%;
 }
 
@@ -130,8 +131,8 @@
 }
 
 .s5 {
-    left: 48%;
-    top: 7%;
+    left: 26%;
+    top: 33%;
 }
 
 .s6 {
@@ -140,8 +141,8 @@
 }
 
 .s7 {
-    top: 20%;
-    right: 25%;
+    top: 17%;
+    left: 44%;
 }
 
 .s8 {
@@ -155,8 +156,8 @@
 }
 
 .s10 {
-    top: 45%;
-    right: 11%;
+    top: 56%;
+    right: 5%;
 }
 
 .s11 {

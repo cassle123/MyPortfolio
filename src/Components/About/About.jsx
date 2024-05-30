@@ -1,6 +1,7 @@
 import "./About.css";
-import AboutMe from "../../assets/avatar-2.svg";
+import AboutMe from "../../assets/avatar-2.png";
 import AboutBox from "./AboutBox";
+import { Link } from "react-router-dom";
 const skills = [
   { title: "Front-end Skill", percent: "85%", valcolor: "rgb(255, 209, 92)" },
   { title: "Back-end Skill", percent: "50%", valcolor: "rgb(255, 76, 96)" },
@@ -23,9 +24,9 @@ function About() {
               this portfolio is written using ReactJS. Additionally, I have
               experience working with ASP.net / C#.
             </p>
-            <a href="" className="btn">
-              Download CV
-            </a>
+            <Link to={"/experience"} className="btn">
+              View my experience
+            </Link>
           </div>
 
           <div className="about-skills grid">

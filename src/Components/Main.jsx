@@ -2,14 +2,11 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./Home/Home";
 import About from "./About/About";
-import Services from "./Services/Services";
-import Resume from "./Resume/Resume";
 import Portfolio from "./Portfolio/Portfolio";
-import Pricing from "./Pricing/Pricing";
-import Testimonials from "./Testimonials/Testimonials";
 import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
 import Sidebar from "./Sidebar/Sidebar";
+import Experience from "./Experience/Experience";
 
 const routes = [
   { path: "/", element: <Home />, name: "Home", icon: "icon-home" },
@@ -20,16 +17,10 @@ const routes = [
     icon: "icon-user-following",
   },
   {
-    path: "/services",
-    element: <Services />,
-    name: "Services",
+    path: "/experience",
+    element: <Experience />,
+    name: "Experience",
     icon: "icon-briefcase",
-  },
-  {
-    path: "/resume",
-    element: <Resume />,
-    name: "Resume",
-    icon: "icon-graduation",
   },
   {
     path: "/portfolio",
@@ -37,14 +28,6 @@ const routes = [
     name: "Portfolio",
     icon: "icon-layers",
   },
-  { path: "/pricing", element: <Pricing />, name: "Pricing", icon: "icon-tag" },
-  {
-    path: "/testimonials",
-    element: <Testimonials />,
-    name: "Testimonials",
-    icon: "icon-bubble",
-  },
-  { path: "/blog", element: <Blog />, name: "Blog", icon: "icon-note" },
   {
     path: "/contact",
     element: <Contact />,

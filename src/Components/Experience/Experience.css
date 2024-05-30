@@ -1,9 +1,9 @@
-.services-container {
+.experience-container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
 }
 
-.services-card {
+.experience-card {
     text-align: center;
     padding: 1.875rem;
     border-radius: var(--border-radius);
@@ -12,7 +12,7 @@
     box-shadow: var(--box-shadow-card);
 }
 
-.services-card:hover {
+.experience-card:hover {
     transform: translateY(-10px);
 }
 
@@ -28,11 +28,15 @@
     box-shadow: 0px 5px 20px 0px rgb(108 108 255 /80%);
 }
 
-.services-img {
+.experience-img {
     margin-bottom: 1.25rem;
 }
 
-.services-title {
+.experience-title {
     font-size: var(--h3-fs);
     margin-bottom: 1rem;
+}
+
+.experience-experience{
+    margin-top: 1.875rem;
 }
