@@ -5,14 +5,12 @@
 :root {
   /* Color */
   /* Color-mode-HSL(hue - mau sac, saturation - do bao hoa, lightness - do choi) */
-  --first-color: hsl(353, 100%, 65%);
+  --first-color: hsl(209 86% 65%);
+  --second-color: hsl(209,55%, 83%);
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
   --container-color: #fff;
-  --color-blue: #71aceb;
-  --color-white: rgb(255, 255, 255);
-  --color-hover: #6c6c6c;
   /* Font size && weight */
   /* 0.5rem = 8px */
   --body-font: 'Rubik', sans-serif;
@@ -97,8 +95,8 @@ img {
 }
 
 .section {
-  padding: 2rem 0;
-  /* height: 100vh; */
+  padding: 2rem 0 0 0;
+  height: calc(100vh - 100px);
 }
 
 .section-title {

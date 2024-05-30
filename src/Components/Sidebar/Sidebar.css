@@ -3,7 +3,7 @@
     top: 0;
     background: var(--body-color);
     border-bottom: 1px solid rgb(0 0 0 / 18%);
-    padding: 1rem;
+    padding: 3rem;
     width: 100vw;
     height: 100px;
     display: flex;
@@ -21,19 +21,19 @@
 }
 
 .nav-link{
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
     color: var(--title-color);
     font-size: var(--font-bold);
     transition: all 0.4s linear;
 }
 
 .nav-link.active {
-    color: hsl(43, 100%, 68%);
+    color: var(--first-color);
     font-weight: bold;
   }
 
 .nav-link:hover {
-    color: hsl(43, 100%, 68%);
+    color: var(--second-color);
 }
 .nav-footer{
     display: flex;

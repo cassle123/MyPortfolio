@@ -4,7 +4,6 @@ import "./Education.css";
 const data = [
   {
     id: 1,
-    category: "education",
     icon: "icon-graduation",
     year: "2018 - 2022",
     title: "Bachelor's degree of Information Technology",
@@ -12,7 +11,6 @@ const data = [
   },
   {
     id: 2,
-    category: "education",
     icon: "icon-graduation",
     year: "2015 - 2018",
     title: "High School",
@@ -27,20 +25,17 @@ function Education() {
       <div className="education-container grid">
         {/* education */}
         <div className="timeline grid">
-          {data.map(
-            (item) =>
-              item.category === "education" && (
-                <Timeline
-                  key={item.id}
-                  icon={item.icon}
-                  title={item.title}
-                  year={item.year}
-                  desc={item.desc}
-                />
-              )
-          )}
+          {data.map((item) => (
+            <Timeline
+              key={item.id}
+              icon={item.icon}
+              company=""
+              title={item.title}
+              year={item.year}
+              desc={item.desc}
+            />
+          ))}
         </div>
-        
       </div>
     </section>
   );

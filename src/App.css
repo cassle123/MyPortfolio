@@ -61,8 +61,8 @@
     z-index: 99;
     border: none;
     outline: none !important;
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: var(--first-color);;
+    color: var(--container-color);
     cursor: pointer;
     padding: 15px 10px 0px 20px;
     border-radius: 100px 0px 0px;
@@ -71,7 +71,7 @@
 }
 
 .btn-BackToTop:hover {
-    background-color: var(--color-hover);
+    background-color: var(--second-color);
 }
 
 .hidden-btn-btt {

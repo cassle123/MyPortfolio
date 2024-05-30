@@ -2,7 +2,6 @@ import "./Home.css";
 import MyInfo from "../../assets/avatar-1.png";
 import HeaderSocials from "./HeaderSocials";
 import { Link } from "react-router-dom";
-import ScrollDown from "./ScrollDown";
 import Shapes from "./Shapes";
 
 function Home() {
@@ -19,8 +18,6 @@ function Home() {
           <Link to={"/about"} className="btn btn-w100 btn-animation">
             View Info 
           </Link>
-
-          {/* <ScrollDown /> */}
         </div>
         <Shapes />
       </section>

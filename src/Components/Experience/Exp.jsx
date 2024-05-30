@@ -3,7 +3,8 @@ import Image1 from "../../assets/fe.png";
 import Image2 from "../../assets/be.png";
 import Image3 from "../../assets/db.png";
 import Timeline from "../Timeline";
-import Education from "../Education/Education";
+import Education from "../Education/Edu";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -11,7 +12,7 @@ const data = [
     image: Image1,
     title: "Back-end",
     description:
-      "With over 1 year of experience working with ASP.NET Webforms and WebAPI .NET 6.",
+      "With more than a year of hands-on experience in ASP.NET WebForms and WebAPI, utilizing the latest .NET 6 framework.",
     styleClass: "cardBE",
   },
   {
@@ -19,7 +20,7 @@ const data = [
     image: Image2,
     title: "Front-end",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "I am proficient in utilizing JavaScript along with the ReactJS library to develop front-end solutions. Furthermore, I possess the capability to craft interfaces based on templates.",
     styleClass: "cardFE",
   },
   {
@@ -27,7 +28,7 @@ const data = [
     image: Image3,
     title: "Database Storage",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "For databases, I am skilled in writing stored procedures and queries, as well as proficient in debugging using the 'EXPLAIN' command.",
     styleClass: "cardDB",
   },
 ];
@@ -35,7 +36,6 @@ const data = [
 const workexp = [
   {
     id: 1,
-    category: "experience",
     icon: "icon-briefcase",
     company: "INFOASIA SOFTWARE",
     year: "02/2023 - 04/2024",
@@ -44,7 +44,6 @@ const workexp = [
   },
   {
     id: 2,
-    category: "experience",
     icon: "icon-briefcase",
     company: "SNA VIETNAM COMPANY",
     year: "11/2022 - 01/2023",
@@ -53,7 +52,6 @@ const workexp = [
   },
   {
     id: 3,
-    category: "experience",
     icon: "icon-briefcase",
     company: "FPT INFORMATION SYSTEM JOINT STOCK COMPANY ",
     year: "05/2022 - 10/2022",
@@ -83,6 +81,11 @@ function Experience() {
         ))}
       </div>
       <div className="experience-experience">
+        <div className="experience-product">
+          <Link to={"/product"} className="btn">
+            View my Product
+          </Link>
+        </div>
         <div className="timeline grid">
           {workexp.map((item) => (
             <Timeline

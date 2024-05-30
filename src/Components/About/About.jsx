@@ -24,7 +24,7 @@ function About() {
               this portfolio is written using ReactJS. Additionally, I have
               experience working with ASP.net / C#.
             </p>
-            <Link to={"/experience"} className="btn">
+            <Link to={"/experience"} className="btn btn-about">
               View my experience
             </Link>
           </div>

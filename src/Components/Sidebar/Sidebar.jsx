@@ -50,10 +50,18 @@ import "./Sidebar.css";
 import Logo from "../../assets/logo.png";
 
 function Sidebar({ routes }) {
+  const checkActive = () => {
+    const list = document.querySelectorAll(".nav-link.active");
+    list.forEach((item) => {
+      item.classList.remove("active");
+    });
+    return "nav-link";
+  };
+
   return (
     <aside className="aside">
       <NavLink to="/" className="nav-logo">
-        <img src={Logo} alt="Logo" width={40} height={40} />
+        <img src={Logo} alt="Logo" width={50} height={50} />
       </NavLink>
 
       <nav className="nav">
@@ -61,11 +69,7 @@ function Sidebar({ routes }) {
           <ul className="nav-list">
             {routes.map((route, index) => (
               <li key={index} className="nav-item">
-                <NavLink
-                  to={route.path}
-                  className="nav-link"
-                  activeClassName="active"
-                >
+                <NavLink to={route.path} className={checkActive()}>
                   <i className={route.icon}></i>
                 </NavLink>
               </li>

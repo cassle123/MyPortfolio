@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-CardResume.propTypes = {
+Timeline.propTypes = {
   icon: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
@@ -8,7 +8,7 @@ CardResume.propTypes = {
   desc: PropTypes.string.isRequired,
 };
 
-function CardResume({ icon, company, title, year, desc }) {
+function Timeline({ icon, company, title, year, desc }) {
   return (
     <div className="timeline-item">
       <i className={icon}></i>
@@ -20,4 +20,4 @@ function CardResume({ icon, company, title, year, desc }) {
   );
 }
 
-export default CardResume;
+export default Timeline;
