@@ -36,42 +36,30 @@
 }
 
 .btn-about {
-    -webkit-animation: roll-in-right 1s ease-out both;
-    animation: roll-in-right 1s ease-out both;
+    animation: rotate-scale-up 0.65s linear both;
 }
 
-@-webkit-keyframes roll-in-right {
+@keyframes rotate-scale-up {
     0% {
-        -webkit-transform: translateX(800px) rotate(540deg);
-        transform: translateX(800px) rotate(540deg);
-        opacity: 0;
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
     }
-
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
     100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
     }
-}
-
-@keyframes roll-in-right {
-    0% {
-        -webkit-transform: translateX(800px) rotate(540deg);
-        transform: translateX(800px) rotate(540deg);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
+  }
 
 .skills-titles {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 1rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .skills-name {
@@ -110,7 +98,8 @@
     padding: 1.875rem;
     border-radius: var(--border-radius);
     background: var(--container-color);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    box-shadow: var(--shadow);
 }
 
 .about-box:hover {

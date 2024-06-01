@@ -82,7 +82,7 @@ function Experience() {
       </div>
       <div className="experience-experience">
         <div className="experience-product">
-          <Link to={"/product"} className="btn">
+          <Link to={"/product"} className="btn btn-experience">
             View my Product
           </Link>
         </div>

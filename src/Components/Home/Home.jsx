@@ -9,15 +9,15 @@ function Home() {
     <>
       <section className="home container" id="home">
         <div className="intro">
-          <img src={MyInfo} width={150} height={150} alt="" className="home-img" />
           <h1 className="home-name">
             Huynh Quoc Huy (Alesta)
-          <HeaderSocials />
-            </h1>
-          <span className="home-education">I&apos;m a Web Developer</span>
+            <HeaderSocials />
+          </h1>
+          <img src={MyInfo} className="home-img skeleton" />
           <Link to={"/about"} className="btn btn-w100 btn-animation">
-            View Info 
+            View Info
           </Link>
+          <span className="home-education">I&apos;m a Web Developer</span>
         </div>
         <Shapes />
       </section>

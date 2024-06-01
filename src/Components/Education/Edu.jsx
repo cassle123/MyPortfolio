@@ -14,7 +14,7 @@ const data = [
     icon: "icon-graduation",
     year: "2015 - 2018",
     title: "High School",
-    desc: "Tuy Phong High School - Liên Hương, Tuy Phong, Bình Thuận.",
+    desc: "Tuy Phong High School - Lien Huongng, Tuy Phong, Binh Thuan.",
   },
 ];
 
