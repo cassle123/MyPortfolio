@@ -172,3 +172,21 @@
     bottom: 5%;
     right: 5%;
 }
+
+
+@media screen and (max-width: 600px) {
+    .home-name {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .intro{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem 2rem;
+    }
+    .s2, .s5{
+        top: 35%;
+    }
+    .s4, .s8{
+        bottom: 35%;
+    }
+}

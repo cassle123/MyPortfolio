@@ -63,7 +63,7 @@ const workexp = [
 function Experience() {
   return (
     <section className="experience container section">
-      <h2 className="section-title">Experience</h2>
+      <h2 className="section-title">Skill</h2>
       <div className="experience-container grid">
         {data.map((item) => (
           <div key={item.id} className={`experience-card ${item.styleClass}`}>
@@ -80,6 +80,7 @@ function Experience() {
           </div>
         ))}
       </div>
+      <h2 className="section-title">Skill</h2>
       <div className="experience-experience">
         <div className="experience-product">
           <Link to={"/product"} className="btn btn-experience">

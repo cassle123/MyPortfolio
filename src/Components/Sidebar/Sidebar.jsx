@@ -14,11 +14,12 @@ function Sidebar({ routes }) {
     return "nav-link";
   };
 
+  
+
   return (
     <aside className="aside">
       <NavLink to="/" className="nav-logo">
-        <img src={Logo} alt="Logo" width={50} height={50} />
-        {/* <p className="nav-title-logo">Portfolio</p> */}
+        <img src={Logo} className="nav-logo-img" alt="Logo" width={50} height={50} />
       </NavLink>
 
       <nav className="nav">
@@ -27,15 +28,21 @@ function Sidebar({ routes }) {
             {routes.map((route, index) => (
               <li key={index} className="nav-item">
                 <NavLink to={route.path} className={checkActive()}>
-                  <i className={route.icon}></i>
+                  <i className={`${route.icon} nav-link-icon`}></i>
+                  <p className="nav-link-title">
+                    {route.name}
+                  </p>
                 </NavLink>
               </li>
             ))}
           </ul>
+          {/* <i className="fa-solid fa-x nav-close"></i> */}
         </div>
       </nav>
 
-      <div className="nav-footer"></div>
+      <div className="nav-toggle">
+        {/* <i className="fa-solid fa-bars-staggered"></i> */}
+      </div>
     </aside>
   );
 }

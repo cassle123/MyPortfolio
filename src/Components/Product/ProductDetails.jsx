@@ -7,6 +7,11 @@ const data = [
       images: images[1],
       title: "Website OA",
     },
+    {
+      id: 2,
+      images: images[2],
+      title: "App OA",
+    }
   ];
 
 function ProductDetails() {

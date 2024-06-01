@@ -1,6 +1,7 @@
 .experience-container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
+    margin-bottom: 3rem;
 }
 
 .experience-card {
@@ -38,7 +39,7 @@
 }
 
 .experience-experience{
-    margin-top: 1.875rem;
+    margin-top: -1.75rem;
 }
 
 .experience-product{
@@ -51,6 +52,11 @@
 
 .btn-experience{
     animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.education {
+    padding: 2rem 0;
+    height: fit-content;
 }
 
 @keyframes scale-in-hor-right {

@@ -104,7 +104,8 @@ img:not([src]) {
 
 .section {
   padding: 2rem 0 0 0;
-  height: calc(100vh - 100px - 2rem);
+  /* height: calc(100vh - 100px - 2rem); */
+  height: 100%;
 }
 
 .section-title {
@@ -335,14 +336,6 @@ img:not([src]) {
   }
 }
 
-.mb-2{
+.mb-2 {
   margin-bottom: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .container {}
-}
-
-@media (max-width: 900px) {
-  .container {}
 }

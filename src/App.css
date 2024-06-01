@@ -159,19 +159,4 @@
         opacity: 1;
     }
 }
-
-@media (max-width: 600px) {
-    .btn-BackToTop {
-        /* padding: 10px auto;
-        font-size: 15px; */
-    }
-}
-
-@media (max-width: 900px) {
-    .btn-BackToTop {
-        /* padding: auto;
-        font-size: 15px; */
-    }
-}
-
 /* End back to top */

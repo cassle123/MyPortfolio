@@ -33,7 +33,7 @@
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow), -3px 3px 10px 0px #d4d4d4;;
 }
 
 .product-mask {
@@ -59,7 +59,6 @@
     font-size: var(--small-fs);
     display: inline-block;
     padding: 0.19rem 0.625rem;
-    /* transform: translateY(-40px); */
     transition: all 0.3s;
 }
 
@@ -147,4 +146,11 @@
 
 .product-icon-back{
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {   
+    .product-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.875rem;
+    }
 }

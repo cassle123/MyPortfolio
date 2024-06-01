@@ -13,7 +13,7 @@ const routes = [
     path: "/about",
     element: <About />,
     name: "About",
-    icon: "fa-solid fa-circle-info",
+    icon: "fa-solid fa-circle-info ",
   },
   {
     path: "/experience",

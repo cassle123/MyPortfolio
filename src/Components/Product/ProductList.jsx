@@ -1,8 +1,8 @@
 // ProductList.js
 import { Link } from "react-router-dom";
-import Img1 from "../../assets/OA-Web-1.png";
-import Img2 from "../../assets/OA-Web-2.png";
-import Img3 from "../../assets/Portfolio-Web-1.png";
+import Img1 from "../../assets/Product1.png";
+import Img2 from "../../assets/Product2.png";
+import Img3 from "../../assets/Product3.png";
 import { useState } from "react";
 
 const data = [
