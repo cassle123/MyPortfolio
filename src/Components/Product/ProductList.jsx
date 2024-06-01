@@ -1,3 +1,4 @@
+// ProductList.js
 import { Link } from "react-router-dom";
 import Img1 from "../../assets/OA-Web-1.png";
 import Img2 from "../../assets/OA-Web-2.png";
@@ -8,13 +9,13 @@ const data = [
   {
     id: 1,
     img: Img1,
-    title: "Project Website OA ",
+    title: "Website OA ",
     category: "Web",
   },
   {
     id: 2,
     img: Img2,
-    title: "Project app mobile OA",
+    title: "App mobile OA",
     category: "App",
   },
   {
@@ -63,13 +64,12 @@ function ProductList() {
           <div className="product-card" key={item.id}>
             <div className="product-thumnail">
               <img src={item.img} alt={item.title} className="product-img" />
-              <div className="product-mask"></div>
+              <Link to={ item.title !== "My Portfolio" ? `?id=${item.id}` : `/`} className="product-mask"></Link>
             </div>
-
             <span className="product-category">{item.category}</span>
-            <Link to="#" className="product-button">
+            <div className="product-button">
               <i className="fa-solid fa-arrow-right product-button-icon"></i>
-            </Link>
+            </div>
             <h3 className="product-title">{item.title}</h3>
           </div>
         ))}
